@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/contact-saikia",
+    "/home",
+    "/product-new/analog-two-way-radio/analog-radio",
+    "/product-new/digital-radio/dmr-repeaters-and-systems",
+    "/product-new/digital-radio/dmr-two-way-radios",
+    "/product-new/digital-radio/tetra-systems",
+    "/product-new/digital-radio/tetra-two-way-radio",
+    "/product-new/intrinsically-safe-radios"
+  ]
+}
