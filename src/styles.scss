@@ -62,7 +62,9 @@ body {
   padding: 11px 0;
   background-color: #44a0e9;
 
-  cursor: pointer;
+  // Uncomment it later
+  // cursor: pointer;
+  cursor: default;
 
   text-align: center;
   color: #fff;
@@ -72,7 +74,7 @@ body {
 }
 
 .primary-btn:hover {
-  background-color: #297ec4;
+  // background-color: #297ec4;
 }
 
 .watch-video-btn {
@@ -91,13 +93,13 @@ body {
   color: #9b9b9b;
   font-size: 14px;
   font-weight: 600;
-  // letter-spacing: 1.2px;
 }
 
-.watch-video-btn:hover {
-  border-color: #44a0e9;
-  color: #44a0e9;
-}
+// Uncomment it later
+// .watch-video-btn:hover {
+//   border-color: #44a0e9;
+//   color: #44a0e9;
+// }
 
 .page-center {
   max-width: 1150px !important;
