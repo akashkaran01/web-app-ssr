@@ -1,0 +1,31 @@
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.page-heading {
+  margin: 20px 0;
+  text-align: center;
+  color: #00205b;
+
+  // font-size: 30px;
+  // line-height: 70px;
+  // margin-bottom: 30px;
+}
+
+.contact-us-container {
+  display: flex;
+  gap: 15px;
+
+  .flex-item {
+    .contact-info {
+      height: 450px;
+      padding: 25px;
+      background-color: rgb(242 242 242);
+
+      p {
+        margin: 10px 0;
+      }
+    }
+  }
+}

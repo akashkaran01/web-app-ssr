@@ -1,0 +1,191 @@
+@import "../../../assets/css/variable.scss";
+
+header {
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  background-color: $project-white;
+  // box-shadow: 0px 2px 0px #b1abab;
+  // padding: 0 9%;
+  z-index: 3;
+
+  .container-header-center {
+    max-width: 1150px;
+    margin: 0 auto;
+    // max-width: 1500px;
+    // margin: auto;
+    height: 100%;
+    display: flex;
+
+    .organisation-logo {
+      // padding: 10px 0 15px 0;
+
+      .saikia {
+        background-image: url(./../../../assets/image/Saikia-Logo.jpg);
+        width: 280px;
+        height: 100%;
+
+        cursor: pointer;
+      }
+    }
+
+    .header-routes-area {
+      width: 100%;
+      // padding: 0 3rem;
+      display: flex;
+      justify-content: space-between;
+
+      nav {
+        ul {
+          display: flex;
+          height: 100%;
+        }
+
+        li {
+          cursor: pointer;
+          padding: 20px 20px;
+          font-weight: 600;
+
+          a {
+            text-decoration: none;
+            color: #00205b;
+            font-size: 16px;
+          }
+
+          a.active {
+            color: lightblue;
+          }
+        }
+
+        li:hover {
+          background-color: rgb(244, 244, 244);
+        }
+      }
+
+      .search-and-contact-area {
+        display: flex;
+        gap: 50px;
+
+        .search-btn {
+          padding: 29px 0;
+          cursor: pointer;
+        }
+
+        .contact-area {
+          padding: 12px 0;
+
+          .btn {
+            font-weight: 600;
+            height: 35px;
+            border-radius: 20px;
+            width: 150px;
+            text-align: center;
+            padding: 8px 0;
+            background-color: #44a0e9;
+            color: $project-white;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+          }
+
+          .btn:hover {
+            background-color: #297ec4;
+          }
+        }
+      }
+    }
+  }
+}
+
+.subnav {
+  position: absolute;
+  top: 60px;
+
+  width: 100%;
+  background-color: $project-white;
+
+  max-height: 33.5rem;
+  // height: auto;
+  overflow-y: auto;
+
+  border-top: 4px solid #efefef;
+
+  .subnav-container {
+    display: flex;
+
+    // Check if 13rem can be replaced by 9%
+    padding-left: 9%;
+    width: 100%;
+    height: auto;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    .subnav-area {
+      width: 365px;
+      padding: 30px 20px 30px 20px;
+      background-color: #f2f5f5;
+
+      .subnav-item {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .active {
+        background-color: #48a0e5 !important;
+        color: $project-white;
+        border-radius: 4px;
+      }
+
+      .subnav-item:hover {
+        background-color: #a3d6ff;
+        border-radius: 4px;
+      }
+    }
+
+    .selected-subnav-content {
+      padding: 40px 9% 40px 68px;
+
+      .selected-subnav-head {
+        // font-family: "Roboto-Medium" !important;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .selected-subnav-body {
+        max-width: 400px;
+        word-wrap: break-word;
+        white-space: normal;
+        padding-top: 12px;
+        font-weight: 400;
+        padding-bottom: 20px;
+        color: #707070;
+      }
+
+      .selected-subnav-feet {
+        font-size: 16px;
+        // font-weight: 600;
+        color: #272727;
+        display: inline-block;
+        // cursor: pointer;
+
+        .selected-subnav-feet-item {
+          font-family: "Roboto-Medium" !important;
+          padding: 8px 10px;
+        }
+
+        // Temporarily commenting it for client purpose. Uncomment it later
+        // .selected-subnav-feet-item:hover {
+        //   background: #a3d6ff;
+        // }
+      }
+    }
+
+    .close-btn {
+      position: relative;
+      top: 15px;
+      cursor: pointer;
+      height: 25px;
+    }
+  }
+}

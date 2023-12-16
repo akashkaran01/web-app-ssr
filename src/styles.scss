@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/** Sets default styles for all html elements */
+@import "./assets/css/project-default.scss";
+
+// Move this font at correct position later.
+@font-face {
+  font-family: "Roboto-Light-300";
+  src: url("./assets/fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("./assets/fonts/Roboto/Roboto-Black.ttf");
+}
+
+/** CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // font-family:Georgia, 'Times New Roman', Times, serif
+  // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto-Light-300", sans-serif;
+}
+
+/** All background colours */
+.bg-black {
+  background-color: #1a1a1a;
+}
+
+.bg-dark-blue {
+  background-color: #00205b;
+  // #162a5b
+}
+
+.bg-blue:hover {
+  background: #a3d6ff;
+}
+
+/** END */
+
+.primary-btn {
+  height: 38px;
+  width: 160px;
+  border-radius: 20px;
+
+  padding: 11px 0;
+  background-color: #44a0e9;
+
+  cursor: pointer;
+
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  // font-weight: 600;
+  // letter-spacing: 1.2px;
+}
+
+.primary-btn:hover {
+  background-color: #297ec4;
+}
+
+.watch-video-btn {
+  height: 38px;
+  width: 160px;
+  border-radius: 20px;
+
+  padding: 11px 0;
+  background-color: transparent;
+  border: 1px solid #9b9b9b;
+
+  //Change it to pointer
+  cursor: default;
+
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: 600;
+  // letter-spacing: 1.2px;
+}
+
+.watch-video-btn:hover {
+  border-color: #44a0e9;
+  color: #44a0e9;
+}
+
+.page-center {
+  max-width: 1150px !important;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@import "./assets/css/sub-headers.scss";
